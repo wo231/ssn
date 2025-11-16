@@ -161,6 +161,7 @@ services:
       PUBLIC_POCKETBASE_URL: ${PUBLIC_POCKETBASE_URL}
       LOCAL_POCKETBASE_URL: ${LOCAL_POCKETBASE_URL}
       GK_REDIS_URL: ${GK_REDIS_URL}
+      ORIGIN: ${PUBLIC_WEBSITE_URL}
     volumes:
       - ./apps/web/src:/app/apps/web/src
       - ./apps/web/static:/app/apps/web/static
