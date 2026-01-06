@@ -153,9 +153,7 @@ services:
     ports:
       - "3000:3000"
     build:
-      context: .
-      dockerfile: ./apps/web/Dockerfile
-      target: ${NODE_ENV}
+      context: ./apps/web
     environment:
       PUBLIC_WEBSITE_URL: ${PUBLIC_WEBSITE_URL}
       PUBLIC_POCKETBASE_URL: ${PUBLIC_POCKETBASE_URL}
